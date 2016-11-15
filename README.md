@@ -36,3 +36,7 @@ Start rq-dashboard and open http://localhost:9181 in browser
 ## Resources
   - S3 Bucket (input): http://s3.amazonaws.com/waldo-recruiting
   - RQ (Redis Queue) http://python-rq.org/
+
+## Scope for improvement
+  - As the Exif info is present in header, no need to download complete image
+  - Improved downloading of image by continuing from the previous fail point 
