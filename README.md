@@ -21,6 +21,10 @@ Start multiple workers based on the configurations of your system
   - source waldoenv/bin/activate
   - rq  worker --exception-handler exceptionhandler.retry_handler  download_queue read_exif_queue store_data_in_db_queue
   - rq  worker --exception-handler exceptionhandler.retry_handler  download_queue
+
+## Start the process
+  - source waldoenv/bin/activate
+  - python imagedownloader.py
   
 ## Logging
   - tail -f waldophotos.log

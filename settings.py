@@ -1,6 +1,6 @@
 import logging
 
-DEBUG = True
+DEBUG = False
 bucket_url = "http://s3.amazonaws.com/waldo-recruiting/"
 download_dir = "data"
 db_host = "localhost"
