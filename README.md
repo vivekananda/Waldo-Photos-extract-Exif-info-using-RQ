@@ -19,8 +19,8 @@ update settings.py file for all confugurable parameters
 ## Start workers
 Start multiple workers based on the configurations of your system
   - source waldoenv/bin/activate
-  - rq  worker --exception-handler startworker.retry_handler  download_queue read_exif_queue store_data_in_db_queue
-  - rq  worker --exception-handler startworker.retry_handler  download_queue
+  - rq  worker --exception-handler exceptionhandler.retry_handler  download_queue read_exif_queue store_data_in_db_queue
+  - rq  worker --exception-handler exceptionhandler.retry_handler  download_queue
   
 ## Logging
   - tail -f waldophotos.log
