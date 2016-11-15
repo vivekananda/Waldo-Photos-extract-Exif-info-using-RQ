@@ -1,3 +1,6 @@
+# Problem statement
+Using any language and data-store of your choice, write an application that reads a set of photos from a network store (S3), parses the EXIF data from the photos and indexes the EXIF key/value pairs into a query-able store by unique photo.
+
 # Prerequisites
   - redis
 
@@ -22,4 +25,8 @@ Start multiple workers based on the configurations of your system
 # Monitoring
 Start rq-dashboard and open http://localhost:9181 in browser
   - rq-dashboard
+ 
+# Resources
+  - S3 Bucket (input): http://s3.amazonaws.com/waldo-recruiting
+  - RQ (Redis Queue) http://python-rq.org/
   
